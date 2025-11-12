@@ -288,4 +288,4 @@ async def send_summary_to_telegram():
         print(f"⚠️ No se pudo interpretar la fecha '{date}' → {e}")
         continue
 
-await send_summary_to_telegram()
+asyncio.run(send_summary_to_telegram())
